@@ -15,19 +15,17 @@ USAGE: eFASTA \<options\><br />
 <br />
   where options are:<br />
 <br />
-   -fasta, -f \<infile\>             (mandatory) FASTA-formatted nucleotide sequence file name<br />
-   -coord, -c \<pattern:start-end\>  (mandatory) DNA segment to extract  from [infile] defined<br />
-                                   by the first FASTA  header  containing [pattern]  and the<br />
-                                   region comprised  between nucleotide  indexes [start] and<br />
-                                   [end] (both inclusive); if [start] > [end], the extracted<br />
-                                   nucleotide segment is reverse-complemented (mandatory)<br />
-   -outname, -o \<basename\>         extracted nucleotide  segment is written  into the FASTA-<br />
-                                   formatted output file [basename].fna (default: "seq")<br />
-   -cds                            to indicate  that the  extracted  DNA  segment is  a CDS,<br />
-                                   leading to  the writing  of its  amino  acid  translation<br />
-                                   (standard  genetic  code)  into a  second FASTA-formatted<br />
-                                   output file [basename].faa<br />
-   -fcds                           same as  option -cds  but to search for the full CDS that<br />
-                                   includes the specified region,  i.e. first occuring codon<br />
-                                   START before index [start]  and first occuring codon STOP<br />
-                                   after index [end]<br />
+-fasta, -f \<infile\><br />
+(mandatory) FASTA-formatted nucleotide sequence file name<br />
+<br />
+-coord, -c \<pattern:start-end\><br />
+(mandatory) DNA segment to extract from [infile] defined by the first FASTA header containing [pattern] and the region comprised  between nucleotide  indexes [start] and [end] (both inclusive); if [start] > [end], the extracted nucleotide segment is reverse-complemented (mandatory)<br />
+<br />
+-outname, -o \<basename\><br />
+extracted nucleotide  segment is written  into the FASTA-formatted output file [basename].fna (default: "seq")<br />
+<br />
+-cds<br />
+to indicate  that the  extracted  DNA  segment is  a CDS, leading to  the writing  of its  amino  acid  translation (standard  genetic  code)  into a  second FASTA-formatted output file [basename].faa<br />
+<br />
+-fcds<br />
+same as  option -cds  but to search for the full CDS that includes the specified region,  i.e. first occuring codon START before index [start]  and first occuring codon STOP after index [end]
