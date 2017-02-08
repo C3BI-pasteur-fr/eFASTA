@@ -10,8 +10,7 @@ Use gcj compiler to compile the program from the code source. To create the bina
 ## USAGE ##
 Launch eFASTA without arguments to read the documentation.<br /> 
 
-USAGE:<br />
-<code>eFASTA \<options\></code><br />
+USAGE:   <code>eFASTA \<options\></code><br />
 <br />
 where options are:<br />
 <br />
